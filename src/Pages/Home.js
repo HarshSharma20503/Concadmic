@@ -1,4 +1,5 @@
 import React from 'react'
+import Tags from '../Components/Tags';
 import BlogSection from '../Components/BlogSection'
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
             <BlogSection />
           </div>
           <div className="col-md-3">
-            <h2>Tags</h2>
+            <Tags/>
             <h2>Category</h2>
           </div>
         </div>
