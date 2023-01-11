@@ -161,7 +161,7 @@
 
 .btn-read {
     background: #544e66 !important;
-	border-radius: 0 !important;
+	border-radius: 10px !important;
 	color: #fff!important;
 	padding: 5px 10px!important;
 	float: left;
@@ -186,6 +186,7 @@
 	margin-top: 5px;
 	margin-bottom: 5px;
 	display: inline-block;
+    border-radius: 10px !important;
 }
 .tag:hover, .tag:focus {
 	background: yellow;
