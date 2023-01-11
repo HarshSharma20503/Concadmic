@@ -14,7 +14,7 @@ function About() {
               <div class="row ">
                 <div class="col-md-6 mt-md-2 m-0">
                   <span class="badge-info badge rounded-pill px-3 py-1 my-2 font-weight-light f">
-                    <h6 class="head">About Concacademics</h6>
+                    <h3 class="head">About Concadmic</h3>
                   </span>
                   <h6 class="font-weight-light subtitle">
                   Concadmic is a comprehensive platform where several blogs of experienced people along with all required academic resources are available and easily accessible. It also serves as a networking platform where anyone can reach out to their seniors or peers. Apart from the blogging feed and the academic resources section, there is an events section where all the upcoming college events will be posted.
@@ -27,27 +27,30 @@ function About() {
                         <div class="col-md-12 img-hover mb-4">
                           <img
                             alt="ux"
-                            class="rounded img-shadow img-fluid"
+                            class="profile-img rounded img-shadow img-fluid"
                             src="images/harsh.jpeg"
                           />
+                          <h5>Harsh Sharma</h5>
                         </div>
                         <div class="col-md-12 img-hover mb-4">
                           <img
                             alt="ux"
-                            class="rounded img-shadow img-fluid"
+                            class="profile-img rounded img-shadow img-fluid"
                             src="images/barbie.jpeg"
                           />
+                          <h5>Barbie Agrawal</h5>
                         </div>
                       </div>
                     </div>
                     <div class="col-md-6 uneven-box">
                       <div class="row">
                         <div class="col-md-12 img-hover mb-4">
-                          <img
+                          <div class="dipti-img"><img
                             alt="ux"
-                            class="rounded img-shadow img-fluid"
+                            class=" profile-img rounded img-shadow img-fluid"
                             src="images/dipti.jpg"
                           />
+                          <h5>Dipti Jain</h5></div>
                         </div>
                       </div>
                     </div>
