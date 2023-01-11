@@ -172,3 +172,27 @@
 .text-white{
 	color: white !important;
 }
+
+//Tags CSS
+.tags > a {
+    text-decoration: none;
+}
+.tag {
+	background: #565656;
+	padding: 10px 15px;
+	color: rgb(249, 246, 246);
+	transition: (0.5s);
+	margin-right: 8px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+.tag:hover, .tag:focus {
+	background: yellow;
+	color: rgb(20, 3, 3);
+	text-decoration: none;
+}
+
+.white-text{
+	color: #fff;
+}

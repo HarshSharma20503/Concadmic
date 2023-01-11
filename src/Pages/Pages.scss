@@ -220,3 +220,73 @@ padding: 10px 50px!important;
   align-items: center;
   flex-direction: column;
 }
+
+//Details CSS
+.blog-title-box {
+  width: 38.2%;
+z-index: 555;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+
+  .single & {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+  .overlay {
+      position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: rgba(0,0,0,.4);
+  }
+
+  .blog-title {
+      z-index: 12;
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+
+      .single & {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+      h2 {
+          color: white;
+    font-weight: 350;
+          .single & {
+      font-size: 72px;
+    }
+      }
+
+      > span {
+          display: block;
+    color: rgba(255,255,255,.6);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: .05em;
+    margin-bottom: 10px;
+      }
+  }
+  
+}
+
+.blog-single-content {
+  z-index: 999;
+background: transparent;
+
+p, ul li {
+  font-size: 1.15rem;
+}
+}
+
+.text-white{
+color: white !important;
+}
