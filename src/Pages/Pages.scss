@@ -79,3 +79,65 @@
       font-size: 18px;
       margin: auto;
   }
+
+//AddEditBlog CSS
+.heading {
+  font-size: 20px;
+color: #424040;
+  font-weight: 600;
+}
+
+.input-text-box {
+  border-radius: 0!important;
+font-size: 15px!important;
+height: 45px!important;
+letter-spacing: 1px!important;  
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: yellow !important;
+}
+
+.description-box {
+  border-radius: 0!important;
+height: 150px;
+resize: none;
+padding-top: 20px!important;
+letter-spacing: 1px!important; 
+}
+
+.btn-add {
+  background: #bf7034 !important;
+border-radius: 0!important;
+color: #fff!important;
+padding: 10px 50px!important;
+}
+
+
+.react-tag-input {
+  height: 45px !important;
+}
+
+.react-tag-input:focus {
+  border-color: yellow !important;   
+}
+
+.catg-dropdown {
+  width: 100%;
+  border-radius: 4px;
+  height: 45px;
+  color: #806a78;
+}
+
+.catg-dropdown:focus {
+    outline: none !important;
+    border-color: yellow;
+}
+
+.trending {
+    float: left;
+    color: #806a78;
+    font-size: 18px;
+    margin: auto;
+}
