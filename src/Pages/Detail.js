@@ -1,15 +1,49 @@
-import React from 'react';
+import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
+import React, {useState , useEffect} from 'react';
+import {useParams} from 'react-router-dom';
+import Tags from '../Components/Tags';
+import { db } from '../firebase';
+
 import './Pages.scss';
 
-const Detail = () => { 
+const Detail = ({setActive}) => {
+
+  const {id} = useParams();
+  const [blog,setBlog] = useState(null);
+  const [tags,setTags] = useState([]);
+  
+
+  useEffect(()=>{
+    const getBlogsData = async() =>{
+      const blogRef = collection(db,"blogs");
+      const blogs= await getDocs(blogRef);
+      let tags=[];
+      blogs.docs.map((doc)=>tags.push(...doc.get("tags")));
+      let uniqueTags = [...new Set(tags)];
+      setTags(uniqueTags);
+    };
+    getBlogsData();
+  },[]);
+
+  useEffect(()=>{
+    id && getBlogDetail();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[id])
+
+  const getBlogDetail = async () =>{
+    const docRef = doc(db, "blogs",id);
+    const blogDetail = await getDoc(docRef);
+    setBlog(blogDetail.data());
+    setActive(null);
+  } 
 
   return (
     <div className="single">
-      <div className="blog-title-box" style={{backgroundImage: "https://images.unsplash.com/photo-1508807526345-15e9b5f4eaff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGFuY2UlMjBwZXJmb3JtYW5jZXxlbnwwfHwwfHw%3D&w=1000&q=80"}}>
+      <div className="blog-title-box" style={{backgroundImage: `url('${blog?.imgUrl}')`}}>
         <div className="overlay">
           <div className="blog-title">
-            <span>Blog Time</span>
-            <h2>Blog</h2>
+            <span>{blog?.timestamp.toDate().toDateString()}</span>
+            <h2>{blog?.title}</h2>
           </div>
         </div>
       </div>
@@ -18,14 +52,14 @@ const Detail = () => {
           <div className="row mx-0">
             <div className="col-md-8">
               <span className="meta-info text-start text-white">
-                By <p className="author">Blog author</p>
-                " - "+"Tue Jan 23 2023"
+                By <p className="author">{blog?.author}</p>
+                {" - "+blog?.timestamp.toDate().toDateString()}
               </span>
-              <p className="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sequi, mollitia earum adipisci itaque accusantium? Saepe quis asperiores iure vitae laudantium nobis, aperiam atque nostrum cumque enim, ullam dignissimos hic.</p>
+              <p className="text-start">{blog?.description}</p>
             </div>
             <div className="col-md-3">
-              <h2>Tags</h2>
-              <h2>Categories</h2>
+              <Tags tags={tags}/>
+              <h2>Category</h2>
             </div>
           </div>
         </div>

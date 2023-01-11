@@ -1,4 +1,4 @@
-// Header CSS
+//***************** Header CSS ********************
 
 *{
     margin: 0;
@@ -74,7 +74,7 @@
     border-radius: none !important;
 }
 
-// BlogSection
+// ***************** BlogSection CSS ********************
 
 .blog-heading {
 	font-size: 24px;
@@ -173,7 +173,8 @@
 	color: white !important;
 }
 
-//Tags CSS
+// ***************** Tags CSS ********************
+
 .tags > a {
     text-decoration: none;
 }
@@ -195,4 +196,12 @@
 
 .white-text{
 	color: #fff;
+}
+
+
+//***************** Spinner CSS ********************
+
+.spinner{
+    width:3rem;
+    height: 3rem;
 }

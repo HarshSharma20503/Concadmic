@@ -1,13 +1,15 @@
 import Tags from '../Components/Tags';
 import BlogSection from '../Components/BlogSection'
 import React, {useState, useEffect} from 'react';
-import {collection, deleteDoc, doc, getDocs, onSnapshot} from 'firebase/firestore';
+import {collection, deleteDoc, doc, onSnapshot} from 'firebase/firestore';
 import {db} from '../firebase';
 import { toast } from 'react-toastify';
+import Spinner from '../Components/Spinner';
 
 const Home = ({setActive, user}) => {
   const [blogs,setBlogs]=useState([]);
   const [tags,setTags]=useState([]);
+  const [loading,setLoading]=useState(true);
 
   useEffect(()=>{
     const unsub = onSnapshot(collection(db, "blogs"), (snapshot)=>{
@@ -20,6 +22,7 @@ const Home = ({setActive, user}) => {
       const uniqueTags = [...new Set(tags)];
       setTags(uniqueTags);
       setBlogs(list);
+      setLoading(false);
       setActive("home");
     },(error)=>{
       console.log(error);
@@ -30,6 +33,10 @@ const Home = ({setActive, user}) => {
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[setActive]);
+
+  if(loading){
+    return <Spinner/>
+  }
 
   const handleDelete = async (id)=>{
     if(window.confirm("Are us sure you want to delete that blog")){
