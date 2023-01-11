@@ -141,3 +141,67 @@ padding: 10px 50px!important;
     font-size: 18px;
     margin: auto;
 }
+
+// About CSS
+
+ 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.service_heading {
+	text-transform: uppercase;
+	position: relative;
+}
+
+.service_heading:after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0%;
+	height: auto;
+	border-bottom: 3px solid #3e4555;
+	transition: all 0.3s linear;
+}
+
+.service_heading:hover:after {
+	width: 20%
+}
+
+.service {
+	color: #0c0c0d;
+	font-weight: 300;
+}
+
+.service h1, .service h2, .service h3, .service h4, .service h5, .service h6 {
+	color: #0c0c0d;
+}
+
+.service h6 {
+	line-height: 22px;
+	font-size: 25px;
+	color: #0c0c0d;
+}
+
+.service .font-weight-medium {
+	font-weight: 500;
+	color: #0c0c0d;
+}
+
+.service .badge {
+	line-height: 15px;
+}
+
+.service .badge-info {
+	background: #30bd66;
+}
+
+.service .subtitle {
+	color: #0c0c0d;
+	line-height: 40px;
+}
