@@ -1,70 +1,128 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# About the project
 
-## Available Scripts
+***Concadmic*** is a comprehensive platform where several blogs of experienced people along with all required **academic resources** are available and easily accessible. It also serves as a **networking** platform where anyone can reach out to their seniors or peers. Apart from the **blogging** feed and the academic resources section, there is an events section where all the upcoming college **events** will be posted.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Acknowledgements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
+ - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+   
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Built With
 
-### `npm run build`
+### Technologies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `React.js`
+- `HTML`
+- `CSS`
+- `JavaScript`
+- `Firebase`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Packages
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `Bootstrap`
+- `React-Bootstrap`
+- `SCSS`
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Install my-project with npm
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+  npm install my-project
+  cd my-project
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Folder Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### public
 
-### Code Splitting
+- **index.html** file - holds the source code of the project
+- **images folder** - contains all the relevant images used in the project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### src 
+ 
+- **components** folder - conatins all components folders (BlogSection, Header etc.) and each folder conatins its js file with 1 common css file
+- **pages** folder - contains different website pages folders like About, Login, Home, Events etc. and each folder has its js file and a common css file for pages folder 
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Run Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Clone the project
 
-### Advanced Configuration
+```bash
+  git clone https://link-to-project
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Go to the project directory
 
-### Deployment
+```bash
+  cd my-project
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Install dependencies
 
-### `npm run build` fails to minify
+```bash
+  npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Start the server
+
+```bash
+  npm run start
+```
+
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+
+## Documentation
+
+[Documentation](https://linktodocumentation)
+
+
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run deploy
+```
+
+
+
+## Lessons Learned
+
+While working on this project we learned several important qualities such as effective teamwork and time management. Apart from this, we got familiar with several technologies as mentioned above.
+
+
+
+## Credits
+
+This project is made by BDH_Errorist and the team members are
+
+- Barbie Agrawal [github link](https://github.com/barbieagrawal)
+- Deepti Jain [github link](https://github.com/deepti1028)
+- Harsh Sharma [github link](https://github.com/HarshSharma20503)
+
+A special thanks to our mentor Khushi Chauhan (creative head of Optica 2022-23) and the organizing committee of our technical head of Optica 2022-23 Naman Gupta.
+
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
