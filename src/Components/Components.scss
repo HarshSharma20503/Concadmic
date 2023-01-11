@@ -206,3 +206,37 @@
     width:3rem;
     height: 3rem;
 }
+
+//Category CSS
+.widget {
+	position: relative;
+    display: block;
+    margin-bottom: 3rem;
+}
+.widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.link-widget li {
+    padding: 1.2rem 0.8rem 1.7rem;
+    text-transform: capitalize;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    margin: 0;
+    border-bottom: 1px dashed #dadada;
+}
+
+.link-widget li:last-child {
+    border-bottom: 0 dashed #dadada;
+}
+
+.link-widget li span {
+    position: absolute;
+    right: 0;
+}
+
+.text-white{
+    color: #dadada;
+}

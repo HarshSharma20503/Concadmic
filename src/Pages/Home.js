@@ -5,6 +5,7 @@ import {collection, deleteDoc, doc, onSnapshot} from 'firebase/firestore';
 import {db} from '../firebase';
 import { toast } from 'react-toastify';
 import Spinner from '../Components/Spinner';
+import Category from '../Components/Category';
 
 const Home = ({setActive, user}) => {
   const [blogs,setBlogs]=useState([]);
@@ -61,7 +62,7 @@ const Home = ({setActive, user}) => {
           </div>
           <div className="col-md-3">
             <Tags tags={tags}/>
-            <h2>Category</h2>
+            <Category/>
           </div>
         </div>
       </div>
