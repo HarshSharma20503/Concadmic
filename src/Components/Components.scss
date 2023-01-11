@@ -1,0 +1,77 @@
+// Header CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 90%;
+    background-color: rgba(153, 230, 153, 0.867);
+    /* height: 60px; */
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px ;
+    display: flex;
+}
+
+.nav-item{
+    font-size: large !important;
+    align-items: center !important;
+    transition: 0.25s !important;
+    transition-timing-function: linear !important;
+    margin: 2px;
+    border: 1px solid none;
+
+}
+
+.navbar-brand{
+    color:black !important;
+    margin-left: 15px !important;
+    font-size: 25px !important;
+    font-family: 'Metal Mania';
+}
+
+.nav-item:hover{
+    /* border: 1px solid black; */
+    background-color: rgb(136, 195, 224,0.5);
+    border-radius: 5px;
+    color:black !important;
+    
+}
+
+.active{
+    background-color: rgb(136, 195, 224,0.9);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.profileLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.profileImg{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.profileName{
+  display: flex;
+  width:100%;
+  align-items: center;
+}
+
+.color{
+    background-color: transparent;
+    border: none !important;
+    border-radius: none !important;
+}
