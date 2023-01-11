@@ -52,6 +52,24 @@ const Home = ({setActive, user}) => {
 
   console.log("blogs",blogs);
 
+  const counts = blogs.reduce((prevValue, currentValue) => {
+    let name = currentValue.category;
+    if (!prevValue.hasOwnProperty(name)) {
+      prevValue[name] = 0;
+    }
+    prevValue[name]++;
+    return prevValue;
+  }, {});
+
+  const categoryCount = Object.keys(counts).map((k) => {
+    return {
+      category: k,
+      count: counts[k],
+    };
+  });
+
+  console.log("categoryCount", categoryCount);
+
   return (
     <div className="container-fluid pb-4 pt-4 padding">
       <div className="container padding">
@@ -62,7 +80,7 @@ const Home = ({setActive, user}) => {
           </div>
           <div className="col-md-3">
             <Tags tags={tags}/>
-            <Category/>
+            <Category catgBlogsCount={categoryCount}/>
           </div>
         </div>
       </div>
