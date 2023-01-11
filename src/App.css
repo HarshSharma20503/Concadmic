@@ -1,0 +1,23 @@
+/* body 
+   background */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(4,9,30,0.9),rgba(4,9,30,0.7)),url(/public/images/background\ image-concadmic.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    box-sizing: border-box;
+  }
+
+.middleSection{
+   width: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   margin-top: 10px;
+}
+
