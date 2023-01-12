@@ -1,14 +1,20 @@
+// components imported from packages
 import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
 import React, {useState , useEffect} from 'react';
 import {useParams} from 'react-router-dom';
+
+// components imported from custom files
 import Tags from '../Components/Tags';
 import { db } from '../firebase';
 
+// CSS components
 import './Pages.scss';
 
 const Detail = ({setActive}) => {
 
   const {id} = useParams();
+
+  // All states
   const [blog,setBlog] = useState(null);
   const [tags,setTags] = useState([]);
   
@@ -27,6 +33,7 @@ const Detail = ({setActive}) => {
 
   useEffect(()=>{
     id && getBlogDetail();
+    
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[id])
 

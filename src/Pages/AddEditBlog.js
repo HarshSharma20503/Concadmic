@@ -1,11 +1,18 @@
+// components imported from packages
 import React, { useState, useEffect } from "react";
 import ReactTagInput from "@pathofdev/react-tag-input";
-import "@pathofdev/react-tag-input/build/index.css";
-import { db, storage } from "../firebase";
 import { useNavigate, useParams } from "react-router-dom";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { addDoc, collection, doc, getDoc, serverTimestamp, updateDoc, } from "firebase/firestore";
 import { toast } from "react-toastify";
+
+// CSS imported
+import "@pathofdev/react-tag-input/build/index.css";
+
+// components imported from custom files
+import { db, storage } from "../firebase";
+
+
 
 const initialState = {
   title: "",
@@ -26,14 +33,17 @@ const categoryOption = [
 ];
 
 const AddEditBlog = ({ user, setActive }) => {
+
+  // All States
   const [form, setForm] = useState(initialState);
   const [file, setFile] = useState(null);
   const [progress, setProgress] = useState(null);
-  const {id} = useParams();
 
-  const navigate = useNavigate();
+  const {id} = useParams(); //used to get id from url
 
-  const { title, tags, category, description } = form;
+  const navigate = useNavigate(); //used to redirect components
+
+  const { title, tags, category, description } = form; //different variables for form
 
 
   useEffect(() => {

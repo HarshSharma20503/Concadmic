@@ -1,14 +1,19 @@
+// components imported from custom files
 import Tags from '../Components/Tags';
 import BlogSection from '../Components/BlogSection'
+import Spinner from '../Components/Spinner';
+import Category from '../Components/Category';
+import {db} from '../firebase';
+
+// components imported from packages
 import React, {useState, useEffect} from 'react';
 import {collection, deleteDoc, doc, onSnapshot, getDocs, limit, query,orderBy,
   startAfter} from 'firebase/firestore';
-import {db} from '../firebase';
 import { toast } from 'react-toastify';
-import Spinner from '../Components/Spinner';
-import Category from '../Components/Category';
 
 const Home = ({ setActive, user }) => {
+
+  // All States
   const [loading, setLoading] = useState(true);
   const [blogs, setBlogs] = useState([]);
   const [tags, setTags] = useState([]);
@@ -131,7 +136,7 @@ const Home = ({ setActive, user }) => {
             {blogs.length === 0 && (
               <>
                 <h4>
-                  No Blog found with search keyword:{" "}
+                  No Blog found{" "}
                 </h4>
               </>
             )}

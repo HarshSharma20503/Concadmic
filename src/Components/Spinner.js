@@ -1,5 +1,9 @@
+// components imported from packages
 import React from 'react'
+
+// CSS imported
 import './Components.scss';
+
 const Spinner = () => {
   return (
     <>

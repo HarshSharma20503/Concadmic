@@ -1,4 +1,7 @@
+// components imported from packages
 import React from 'react'
+
+// CSS components
 import "./Pages.scss";
 
 function events() {

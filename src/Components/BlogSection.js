@@ -1,7 +1,12 @@
+// components imported from packages
 import React from "react";
 import FontAwesome from "react-fontawesome";
 import { Link } from "react-router-dom";
+
+// components imported from custom file
 import { excerpt } from "../utility";
+
+// CSS imported
 import "./Components.scss";
 
 const BlogSection = ({

@@ -1,5 +1,8 @@
+// Components imported from packages
 import React from "react";
 import { Link } from "react-router-dom";
+
+// CSS imported
 import './Components.scss';
 
 const Category = ({ catgBlogsCount }) => {

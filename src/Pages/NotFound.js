@@ -1,3 +1,4 @@
+// components imported from packages
 import React from 'react'
 
 const NotFound = () => {

@@ -1,10 +1,14 @@
+// components imported from packages
 import React, {useState} from 'react'
 import { toast} from 'react-toastify';
-import "react-toastify/dist/ReactToastify.css";
-import './Pages.scss'
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 
+// CSS components
+import "react-toastify/dist/ReactToastify.css";
+import './Pages.scss'
+
+// components imported from custom files
 import {auth} from '../firebase';
 
 const initalState = {

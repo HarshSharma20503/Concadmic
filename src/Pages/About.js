@@ -17,7 +17,7 @@ function About() {
                     <h3 className="head">About Concadmic</h3>
                   </span>
                   <h6 className="font-weight-light subtitle">
-                  Concadmic is a comprehensive platform where several blogs of experienced people along with all required academic resources are available and easily accessible. It also serves as a networking platform where anyone can reach out to their seniors or peers. Apart from the blogging feed and the academic resources section, there is an events section where all the upcoming college events will be posted.
+                  Concadmic is a comprehensive platform where several blogs of experienced seniors along with all required academic resources are available and easily accessible to all the students. It also serves as a networking platform where anyone can reach out to their seniors or peers. Apart from the blogging feed and the academic resources section, there is an events section where all the upcoming college events will be posted.
                   </h6>
                 </div>
                 <div className="col-md-6 mt-md-5 m-0">

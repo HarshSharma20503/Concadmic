@@ -1,9 +1,9 @@
-import './App.css';
-import Header from './Components/Header.js'
+// components imported from packages
 import {useState, useEffect} from 'react';
 import { ToastContainer } from 'react-toastify';
-import "react-toastify/dist/ReactToastify.css";
 import {Routes, Route, useNavigate} from "react-router-dom";
+
+// components imported from custom files
 import Home from './Pages/Home';
 import Detail from './Pages/Detail';
 import AddEditBlog from './Pages/AddEditBlog';
@@ -15,7 +15,11 @@ import { auth } from './firebase';
 import { signOut } from 'firebase/auth';
 import CategoryBlog from './Pages/CategoryBlog';
 import TagBlog from './Pages/TagBlog';
+import Header from './Components/Header.js'
 
+// CSS components
+import './App.css';
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
 

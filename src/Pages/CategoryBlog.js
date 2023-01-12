@@ -1,14 +1,22 @@
+// components imported from packages
 import { collection, getDocs, query, where } from "firebase/firestore";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+
+// components imported from custom files
 import BlogSection from "../Components/BlogSection";
 import Spinner from "../Components/Spinner";
 import { db } from "../firebase";
+
+// CSS components
 import './Pages.scss'
 
 const CategoryBlog = ({ setActive }) => {
+
+  // All States
   const [categoryBlogs, setCategoryBlogs] = useState([]);
   const [loading, setLoading] = useState(false);
+
   const { category } = useParams();
 
   const getCategoryBlogs = async () => {
