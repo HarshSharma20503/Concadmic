@@ -7,9 +7,11 @@
 
 ## Acknowledgements
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+ - [Code With Harry](https://www.youtube.com/@CodeWithHarry)
+ - [Code Along With Vishal](https://www.youtube.com/@CodealongwithVishal)
+ - [React-Bootstrap Documentation](https://react-bootstrap.github.io/getting-started/introduction)
+ - [Firebase-Documentation](https://firebase.google.com/docs/guides)
+ - [Chat App using React and Firebase](https://www.youtube.com/watch?v=k4mjF4sPITE)
    
 
 
@@ -31,16 +33,6 @@
 
 
 
-## Installation
-
-Install my-project with npm
-
-```bash
-  npm install my-project
-  cd my-project
-```
-
-
 ## Folder Structure
 
 ### public
@@ -60,13 +52,13 @@ Install my-project with npm
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/HarshSharma20503/Concadmic.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd Concadmic
 ```
 
 Install dependencies
@@ -88,22 +80,6 @@ Start the server
 
 
 
-## Documentation
-
-[Documentation](https://linktodocumentation)
-
-
-
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run deploy
-```
-
-
-
 ## Lessons Learned
 
 While working on this project we learned several important qualities such as effective teamwork and time management. Apart from this, we got familiar with several technologies as mentioned above.
@@ -114,15 +90,10 @@ While working on this project we learned several important qualities such as eff
 
 This project is made by BDH_Errorist and the team members are
 
-- Barbie Agrawal [github link](https://github.com/barbieagrawal)
-- Deepti Jain [github link](https://github.com/deepti1028)
-- Harsh Sharma [github link](https://github.com/HarshSharma20503)
+- Barbie Agrawal [linkedIn](https://www.linkedin.com/in/barbie-agrawal-profile/)
+- Deepti Jain [linkedIn](https://www.linkedin.com/in/deepti-jain-315288249/)
+- Harsh Sharma [linkedIn](https://www.linkedin.com/in/harsh-sharma-507386232/)
 
 A special thanks to our mentor Khushi Chauhan (creative head of Optica 2022-23) and the organizing committee of our technical head of Optica 2022-23 Naman Gupta.
 
-
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
 
