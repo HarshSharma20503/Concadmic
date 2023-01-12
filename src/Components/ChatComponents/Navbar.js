@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import { AuthContext } from '../../Context/AuthContext';
+import './ChatComponents.scss';
 
 const Navbar = () => {
+  const {currentUser} = useContext(AuthContext)
+
   return (
-    <div>
-      
+    <div className='navbar'>
+      <div className="user">
+        <span>{currentUser.displayName}</span>
+      </div>
     </div>
   )
 }
