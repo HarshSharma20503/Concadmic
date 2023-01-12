@@ -7,8 +7,7 @@ import {db} from '../firebase';
 
 // components imported from packages
 import React, {useState, useEffect} from 'react';
-import {collection, deleteDoc, doc, onSnapshot, getDocs, limit, query,orderBy,
-  startAfter} from 'firebase/firestore';
+import {collection, deleteDoc, doc, onSnapshot, getDocs, limit, query, orderBy, startAfter} from 'firebase/firestore';
 import { toast } from 'react-toastify';
 
 const Home = ({ setActive, user }) => {

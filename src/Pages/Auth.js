@@ -9,7 +9,8 @@ import "react-toastify/dist/ReactToastify.css";
 import './Pages.scss'
 
 // components imported from custom files
-import {auth} from '../firebase';
+import {auth, db} from '../firebase';
+import { doc, setDoc } from 'firebase/firestore';
 
 const initalState = {
   firstName: "",
@@ -63,6 +64,19 @@ function Auth({setActive, setUser}) {
           password
         );
         await updateProfile(user, { displayName: `${state.firstName} ${state.lastName}` });
+        
+        const displayName = firstName+" "+lastName;
+        try{
+          await setDoc(doc(db,"users",user.uid),{
+            uid:user.uid,
+            displayName,
+            email
+          });
+          await setDoc(doc(db, "userChats", user.uid), {});
+        }catch(err){
+          console.log(err);
+        }
+        
         toast.info("Signed Up Successfully");
         setActive("home");
       }
