@@ -76,7 +76,14 @@ const Home = ({setActive, user}) => {
         <div className="row mx-0 ">
           <div className="col-md-8">
             <div className="blog-heading text-start py-2 mb-4 text-white">Daily Blogs</div>
-            <BlogSection blogs={blogs} user={user} handleDelete={handleDelete}/>
+            {blogs?.map((blog) => (
+              <BlogSection
+                key={blog.id}
+                user={user}
+                handleDelete={handleDelete}
+                {...blog}
+              />
+            ))}
           </div>
           <div className="col-md-3">
             <Tags tags={tags}/>

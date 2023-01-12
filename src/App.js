@@ -13,6 +13,8 @@ import Auth from './Pages/Auth';
 import Events from './Pages/Events';
 import { auth } from './firebase';
 import { signOut } from 'firebase/auth';
+import CategoryBlog from './Pages/CategoryBlog';
+import TagBlog from './Pages/TagBlog';
 
 
 function App() {
@@ -59,6 +61,8 @@ function App() {
         <Route path='/events' element={<Events/>}/>
         <Route path='/auth' element={<Auth setActive={setActive} setUser={setUser}/>}/>
         <Route path='*' element={<NotFound setActive={setActive}/>}/>
+        <Route path='/category/:category' element={<CategoryBlog setActive={setActive} />}></Route>
+        <Route path='/tag/:tag' element={<TagBlog setActive={setActive} />}></Route>
       </Routes>
       </div>
     </div>

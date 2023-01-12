@@ -1,5 +1,6 @@
 import React from "react";
-import './Components.scss'
+import { Link } from "react-router-dom";
+import './Components.scss';
 
 const Category = ({ catgBlogsCount }) => {
   return (
@@ -9,12 +10,14 @@ const Category = ({ catgBlogsCount }) => {
         <ul>
           {catgBlogsCount?.map((item, index) => (
             <li key={index}>
-              <p className="text-white"
+              <Link
+              className="text-white"
+                to={`/category/${item.category}`}
                 style={{ textDecoration: "none", float: "left", color: "#777" }}
               >
                 {item.category}
-                <span>({item.count})</span>
-              </p>
+                <span className="text-white">({item.count})</span>
+              </Link>
             </li>
           ))}
         </ul>

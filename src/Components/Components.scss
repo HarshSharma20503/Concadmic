@@ -181,18 +181,25 @@
 .tag {
 	background: #565656;
 	padding: 10px 15px;
-	color: rgb(249, 246, 246);
+	color: rgb(238, 229, 229) !important;
 	transition: (0.5s);
 	margin-right: 8px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	display: inline-block;
     border-radius: 10px !important;
+    a{
+        color: white ;
+    }
+    
 }
 .tag:hover, .tag:focus {
 	background: yellow;
-	color: rgb(20, 3, 3);
+	color: rgb(20, 3, 3) !important;
 	text-decoration: none;
+    a{
+        color: black;
+    }
 }
 
 .white-text{

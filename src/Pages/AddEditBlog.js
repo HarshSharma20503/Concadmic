@@ -20,8 +20,8 @@ const categoryOption = [
   "Placements",
   "Projects",
   "Exams",
-  "Acadmics",
-  "Events/Fests",
+  "Academics",
+  "Events",
   "Others"
 ];
 
