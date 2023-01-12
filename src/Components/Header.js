@@ -1,11 +1,16 @@
+// Components imported from packages
 import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { Link } from 'react-router-dom';
 
+// CSS imported
 import './Components.scss'
 
 const Header = ({active,setActive,user,handleLogout}) => {
+  
+  //current-user id
   const userId=user?.uid;
+  
   return (
     <>
     <section className="header">
