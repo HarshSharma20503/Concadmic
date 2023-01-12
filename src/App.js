@@ -1,7 +1,7 @@
 // components imported from packages
 import {useState, useEffect} from 'react';
 import { ToastContainer } from 'react-toastify';
-import {Routes, Route, useNavigate} from "react-router-dom";
+import {Routes, Route, useNavigate, Navigate} from "react-router-dom";
 
 // components imported from custom files
 import Home from './Pages/Home';
@@ -20,6 +20,8 @@ import Header from './Components/Header.js'
 // CSS components
 import './App.css';
 import "react-toastify/dist/ReactToastify.css";
+import ChatIcon from './Components/ChatIcon';
+import ChatBox from './Pages/ChatBox';
 
 function App() {
 
@@ -56,18 +58,24 @@ function App() {
       />
       <ToastContainer position='top-center'/>
       <div className='middleSection'>
-      <Routes>
-        <Route path='/' element={<Home setActive={setActive} user={user}/>}/>
-        <Route path='/detail/:id' element={<Detail setActive={setActive}/>}/>
-        <Route path='/create' element={<AddEditBlog  user={user} />}/>
-        <Route path='/update/:id' element={<AddEditBlog user={user} setActive={setActive}/>} />
-        <Route path='/about' element={<About/>}/>
-        <Route path='/events' element={<Events/>}/>
-        <Route path='/auth' element={<Auth setActive={setActive} setUser={setUser}/>}/>
-        <Route path='*' element={<NotFound setActive={setActive}/>}/>
-        <Route path='/category/:category' element={<CategoryBlog setActive={setActive} />}></Route>
-        <Route path='/tag/:tag' element={<TagBlog setActive={setActive} />}></Route>
-      </Routes>
+        <ChatIcon/>
+        <Routes>
+          <Route path='/' element={<Home setActive={setActive} user={user}/>}/>
+          <Route path='/detail/:id' element={<Detail setActive={setActive}/>}/>
+          <Route path='/create' element={<AddEditBlog  user={user} />}/>
+          <Route path='/update/:id' element={<AddEditBlog user={user} setActive={setActive}/>} />
+          <Route path='/about' element={<About/>}/>
+          <Route path='/events' element={<Events/>}/>
+          <Route path='/auth' element={<Auth setActive={setActive} setUser={setUser}/>}/>
+          <Route path='*' element={<NotFound setActive={setActive}/>}/>
+          <Route path='/category/:category' element={<CategoryBlog setActive={setActive} />}></Route>
+          <Route path='/tag/:tag' element={<TagBlog setActive={setActive} />}></Route>
+          <Route
+          path="/chatBox"
+          element={user?.uid ? (<ChatBox/>) : (<Navigate to="/auth" />)
+          }
+        />
+        </Routes>
       </div>
     </div>
 );

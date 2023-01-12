@@ -247,3 +247,31 @@
 .text-white{
     color: #dadada;
 }
+
+//ChatIcon
+
+.chat-icon {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+	transition: .5s;
+	cursor: pointer;
+	z-index: 1;
+	span {
+		width: 50px;
+		height: 50px;
+		display: table;
+		background: transparent;
+		color: white;
+		text-align: center;
+		border-radius :4px;
+	}
+	i {
+        height: 40px;
+        display: table-cell;
+        vertical-align: middle;
+        background-color: #1f347b;
+        border-radius: 10px;
+	}
+  }

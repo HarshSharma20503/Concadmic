@@ -133,13 +133,6 @@ const Home = ({ setActive, user }) => {
         <div className="row mx-0">
           <div className="col-md-8">
             <div className="blog-heading text-start py-2 mb-4 text-white">Daily Blogs</div>
-            {blogs.length === 0 && (
-              <>
-                <h4>
-                  No Blog found{" "}
-                </h4>
-              </>
-            )}
             {blogs?.map((blog) => (
               <BlogSection
                 key={blog.id}
