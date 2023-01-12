@@ -66,7 +66,6 @@ const Detail = ({setActive}) => {
             </div>
             <div className="col-md-3">
               <Tags tags={tags}/>
-              <h2>Category</h2>
             </div>
           </div>
         </div>
