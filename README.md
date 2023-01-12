@@ -1,7 +1,7 @@
 
 # About the project
 
-***Concadmic*** is a comprehensive platform where several blogs of experienced people along with all required **academic resources** are available and easily accessible. It also serves as a **networking** platform where anyone can reach out to their seniors or peers. Apart from the **blogging** feed and the academic resources section, there is an events section where all the upcoming college **events** will be posted.
+***Concadmic*** is a comprehensive and a user-friendly platform where several blogs of experienced seniors along with all required **academic resources** are available and easily accessible to all the students of their particular college. It also serves as a **networking** platform where any student can easily reach out to their seniors or peers. Apart from the **blogging** feed and the academic resources section, there is an **events** section where all the upcoming college events of that college and other colleges will be posted.
 
 
 
