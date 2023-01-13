@@ -1,7 +1,12 @@
+// components imported from packages
 import React, { useContext } from "react";
+
+// components imported from custom files
 import Messages from "./Messages";
 import Input from "./Input";
 import { ChatContext } from "../../Context/ChatContext";
+
+// CSS components
 import './ChatComponents.scss';
 
 const Chat = () => {
