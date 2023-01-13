@@ -20,16 +20,7 @@
 ### Technologies
 
 - `React.js`
-- `HTML`
-- `CSS`
-- `JavaScript`
 - `Firebase`
-
-### Packages
-
-- `Bootstrap`
-- `React-Bootstrap`
-- `SCSS`
 
 
 
@@ -42,7 +33,7 @@
 
 ### src 
  
-- **components** folder - conatins all components folders (BlogSection, Header etc.) and each folder conatins its js file with 1 common css file
+- **components** folder - contains all components folders (BlogSection, Header etc.) and each folder conatins its js file with 1 common css file. It also contains a chatComponents folder which has all the components of chat box.
 - **pages** folder - contains different website pages folders like About, Login, Home, Events etc. and each folder has its js file and a common css file for pages folder 
 
 
